@@ -1,0 +1,105 @@
+/*======================css common=========================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*=======================css common end=====================*/
+
+#counter-app{
+    background-color: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#counter-app button{
+   padding: 10px 20px;
+   cursor: pointer;
+   font-size: 18px;
+   border: none;
+   color: rgb(0, 0, 0);
+}
+#counter-app input{
+    padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 18px;
+   border: none;
+}
+nav{
+    padding: 40px 0;
+}
+nav span{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+aside{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(38, 44, 38, 0.305);
+    transform: translateX(-100%);
+    transition: 0.5s cubic-bezier(.15,.53,.83,.67);
+}
+aside.active{
+    transform: translateX(0%);
+}
+aside .cross{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #000;
+    position: absolute;
+    right:30px ;
+    top: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+aside .cross:hover{
+    transform: rotate(360deg);
+    background-color: #fff;
+    color: black;
+}
+aside ul{
+    max-width: 300px;
+    width: 80%;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    background-color:hsl(0, 0%, 90%);
+}
+aside ul li a{
+    display: inline-block;
+    padding: 20px 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
